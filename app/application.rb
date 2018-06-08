@@ -3,10 +3,10 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    num_1 = Kernel.rand(1..12)
-    num_2 = Kernel.rand(13..24)
+    time_1 = Kernel.rand(1..12)
+    time_2 = Kernel.rand(13..24)
 
-    if num_1
+    if time_1
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
